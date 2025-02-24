@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+            display: flex;
+            align-items: center;
+            background-color: rgb(3, 45, 31);
+            padding: 10px;
+            height: 50px;
+        }
+        .menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .section-slider{
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background-color: chocolate;
+            max-height: 800px;
+            max-width: 100%;
+        }
+        .contact-photo{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px 20px;
+        }
+        .contact-form{
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(99, 238, 238);
+            height: 150px;
+        }
+        .photo{
+            text-align: center;
+            padding: 20px;
+            background-color: aqua;
+            height: 150px;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            height: 70px;
+        }
+        .social-media{
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            background-color: blue;
+        }
+        .address{
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(75, 75, 233);
+        }
+        .logo{
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(138, 138, 240);
+        }
+
+
+
+        @media(max-width:768px){
+            .menu-list{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .text-mosaic{
+                grid-template-columns: 1fr;
+            }
+            .mosaic{
+                grid-template-columns: 1fr;
+            }
+            .cards{
+                grid-template-columns: 1fr 1fr;
+            }
+            .contact-photo{
+                grid-template-columns: 1fr;
+            }
+            .footer{
+                grid-template-columns: 1fr;
+            }
+        }
+        /*movil 320x480*/
+        @media(max-width:320px){
+            .menu-list{
+                grid-template-columns: 1fr;
+            }
+            .text-content{
+                padding: 10px;
+            }
+            .mosaic{
+                grid-template-columns: 1fr;
+            }
+            .cards{
+                grid-template-columns: 1fr;
+            }
+            .contact-form{
+                padding: 10px;
+            }
+            .footer{
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /*500x1024*/
+        @media(max-width:500px){
+            .menu-list{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .text-mosaic{
+                grid-template-columns: 1fr;
+            }
+            .mosaic{
+                grid-template-columns: 1fr;
+            }
+            .cards{
+                grid-template-columns: 1fr;
+            }
+            .contact-photo{
+                grid-template-columns: 1fr;
+            }
+            .footer{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="section menu-list">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Opcion 1</a></li>
+                <li><a href="#">Opcion 2</a></li>
+                <li><a href="#">Opcion 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section-slider">
+    </section>
+    <section class="section contact-photo">
+        <div class="contact-form">
+            <h1>Titulo 1</h1>
+            <p>Esto es un parrafo</p>
+        </div>
+        <div class="photo">
+            <h1>Titulo 2</h1>
+            <p>Esto es un parrafo</p>
+        </div>
+    </section>
+    <footer class="section footer">
+        <div class="social-media">Pie 1</div>
+        <div class="address">Pie 2</div>
+        <div class="logo">Pie 3</div>
+    </footer>
+</body>
+</html>
