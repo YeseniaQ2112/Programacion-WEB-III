@@ -1,0 +1,25 @@
+body {
+    background-color: aquamarine;
+}
+
+.formulario {
+    margin: 50px auto;
+    padding: 15px;
+    box-shadow: 10px 20px 10px black;
+    background: radial-gradient(circle, #245c40, #90b196);
+    border-radius: 15px 0px;
+    max-width: 500px;
+}
+
+.table thead {
+    background-color: #245c40;
+    color: white;
+}
+
+.table {
+    border: solid 1px black;
+}
+
+#titulo1 {
+    text-align: center;
+}

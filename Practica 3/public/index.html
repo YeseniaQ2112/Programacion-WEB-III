@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la peluquería</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <form id="addForm" class="formulario">
+            <h2 class="mb-4" id="titulo1">Registro de la peluquería</h2>
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" class="form-control mb-2" placeholder="Nombre" required>
+                
+                <label>Edad:</label>
+                <input type="text" id="edad" class="form-control mb-2" placeholder="Edad" required>
+                
+                <label>Especie:</label>
+                <input type="text" id="especie" class="form-control mb-2" placeholder="Especie" required>
+                
+                <label>Sexo:</label>
+                <input type="text" id="sexo" class="form-control mb-2" placeholder="Sexo" required>
+                
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </div>
+        </form>
+
+        <h3 class="mt-5">Lista de Mascotas</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Especie</th>
+                    <th>Sexo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="itemList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
